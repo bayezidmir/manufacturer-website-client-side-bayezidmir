@@ -1,11 +1,15 @@
 import axios from "axios";
 
-const axiosPrivet = axios.create({ baseURL: "https://blooming-scrubland-82321.herokuapp.com" });
+const axiosPrivet = axios.create({
+  baseURL: "https://dry-scrubland-92228.herokuapp.com",
+});
 
 axiosPrivet.interceptors.request.use(
   function (config) {
     if (!config.headers.authorization) {
-      config.headers.authorization = `Bearer ${localStorage.getItem("accessToken")}`;
+      config.headers.authorization = `Bearer ${localStorage.getItem(
+        "accessToken"
+      )}`;
     }
     return config;
   },

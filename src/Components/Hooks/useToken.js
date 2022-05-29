@@ -16,7 +16,7 @@ const useToken = (user) => {
 
   useEffect(() => {
     if (email) {
-      fetch(`https://blooming-scrubland-82321.herokuapp.com/user/${email}`, {
+      fetch(`https://dry-scrubland-92228.herokuapp.com/user/${email}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

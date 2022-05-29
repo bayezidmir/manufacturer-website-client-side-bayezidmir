@@ -12,13 +12,14 @@ const IsAdmin = () => {
   const { data, isLoading, refetch } = useQuery("admin", () =>
     axiosPrivet.get(`/admin/${user?.email}`)
   );
+  console.log("data here", data);
 
   if (loading || isLoading) {
     return <Loading />;
   }
 
   const admin = data?.data?.role === "admin";
-
+  // const admin = true;
   if (!admin) return <Navigate to={"/"} />;
 
   return <Outlet />;

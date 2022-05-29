@@ -14,7 +14,7 @@ const Dashboard = () => {
     refetch,
   } = useQuery("all-users", () => axiosPrivet.get("/all-user"));
 
-  let admin;
+  let admin = true;
   const existUser = users?.data.find((u) => u?.email === user?.email);
   if (existUser?.role === "admin") {
     admin = true;
@@ -27,7 +27,11 @@ const Dashboard = () => {
   return (
     <>
       <div className="drawer min-h-screen drawer-mobile">
-        <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
+        <input
+          id="dashboard-sidebar"
+          type="checkbox"
+          className="drawer-toggle"
+        />
         <div className="drawer-content text-black bg-white  flex flex-col items-center justify-center">
           {/* <!-- Page content here --> */}
           <Outlet />
