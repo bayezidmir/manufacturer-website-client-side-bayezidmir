@@ -1,23 +1,18 @@
-# E-collection
+# Electronic-collection
 
-This site is about car triyars. Here the amazing header footer login page is beautifully designed. It has done the work of back end, authentication live site link: 
+This site is about Electronic Collections. Header and footer is designed following state-of the art design. The whole project is build using back end and Front end, authentication. live site link isa as follows:
 
-This project was bootstrapped with [E-collection](https://t-collection-eaf74.web.app). 
+This project was bootstrapped with [Electronic-collection](https://elcl-bc6cc.web.app/).
 
-
-
-# The libraries and frameworks that I used to do this project:
+# The libraries and frameworks that has been used:
 
 <li>React</li>
-<li>react-hot-toast</li>
-<li>Firebase for authentication</li>
-<li>Node for backEnd</li>
 <li>MongoDB for Database</li>
-<li>react hook form</li>
+<li>Firebase for authentication</li>
+<li>react-hot-toast</li>
 <li>stripe for payment</li>
 <li>MongoDB for Database</li>
+<li>Node for backEnd</li>
+<li>react hook form</li>
 
-
-
-
-# t-collection
+# Electronic-collection
